@@ -1,0 +1,57 @@
+name: banafsaj_store
+description: بنفسج ستور - تطبيق التسوق الرسمي
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.1
+
+  # Networking
+  http: ^1.1.2
+
+  # Local storage (token persistence)
+  shared_preferences: ^2.2.2
+
+  # UI
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+  smooth_page_indicator: ^1.1.0
+  flutter_rating_bar: ^4.0.1
+  fluttertoast: ^8.2.4
+  google_fonts: ^6.1.0
+
+  # Utilities
+  intl: any
+  url_launcher: ^6.2.4
+  share_plus: ^7.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#0c1a35"
+  adaptive_icon_foreground: "assets/images/app_icon_foreground.png"
